@@ -3,7 +3,6 @@ import useUserProfileStore from "../../store/userProfileStore";
 import useAuthStore from "../../store/authStore";
 import EditProfile from "./EditProfile";
 import useFollowUser from "../../hooks/useFollowUser";
-import React from "react";
 
 const ProfileHeader = () => {
 	const { userProfile } = useUserProfileStore();

@@ -1,7 +1,6 @@
 import { Box, Flex, Grid, Skeleton, Text, VStack } from "@chakra-ui/react";
 import ProfilePost from "./ProfilePost";
 import useGetUserPosts from "../../hooks/useGetUserPosts";
-import React from "react";
 
 const ProfilePosts = () => {
 	const { isLoading, posts } = useGetUserPosts();

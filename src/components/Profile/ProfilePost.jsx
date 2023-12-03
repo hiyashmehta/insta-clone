@@ -17,18 +17,17 @@ import {
 import { AiFillHeart } from "react-icons/ai";
 import { FaComment } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import Comment from "../Comment/Comment";
-import PostFooter from "../FeedPosts/PostFooter";
-import useUserProfileStore from "../../store/userProfileStore";
-import useAuthStore from "../../store/authStore";
-import useShowToast from "../../hooks/useShowToast";
+import Comment from "../Comment/Comment.jsx";
+import PostFooter from "../FeedPosts/PostFooter.jsx";
+import useUserProfileStore from "../../store/userProfileStore.js";
+import useAuthStore from "../../store/authStore.js";
+import useShowToast from "../../hooks/useShowToast.js";
 import { useState } from "react";
 import { deleteObject, ref } from "firebase/storage";
-import { firestore, storage } from "../../firebase/firebase";
+import { firestore, storage } from "../../firebase/firebase.js";
 import { arrayRemove, deleteDoc, doc, updateDoc } from "firebase/firestore";
-import usePostStore from "../../store/postStore";
-import Caption from "../Comment/Caption";
-import React from "react";
+import usePostStore from "../../store/postStore.js";
+import Caption from "../Comment/Caption.jsx";
 
 const ProfilePost = ({ post }) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();

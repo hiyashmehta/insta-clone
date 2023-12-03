@@ -20,7 +20,6 @@ import useAuthStore from "../../store/authStore";
 import usePreviewImg from "../../hooks/usePreviewImg";
 import useEditProfile from "../../hooks/useEditProfile";
 import useShowToast from "../../hooks/useShowToast";
-import React from "react";
 
 const EditProfile = ({ isOpen, onClose }) => {
 	const [inputs, setInputs] = useState({

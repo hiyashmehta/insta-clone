@@ -28,7 +28,6 @@ import { useLocation } from "react-router-dom";
 import { addDoc, arrayUnion, collection, doc, updateDoc } from "firebase/firestore";
 import { firestore, storage } from "../../firebase/firebase";
 import { getDownloadURL, ref, uploadString } from "firebase/storage";
-import React from "react";
 
 const CreatePost = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();

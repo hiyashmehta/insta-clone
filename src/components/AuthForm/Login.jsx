@@ -1,7 +1,6 @@
 import { Alert, AlertIcon, Button, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import useLogin from "../../hooks/useLogin";
-import React from "react";
 
 const Login = () => {
 	const [inputs, setInputs] = useState({

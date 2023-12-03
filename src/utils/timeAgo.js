@@ -1,4 +1,4 @@
-export const timeAgo = (timestamp: number) => {
+export const timeAgo = (timestamp) => {
 	const now = Date.now();
 	const secondsAgo = Math.floor((now - timestamp) / 1000);
 

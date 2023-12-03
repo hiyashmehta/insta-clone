@@ -5,7 +5,6 @@ import { InstagramLogo, InstagramMobileLogo } from "../../assets/constants";
 import { BiLogOut } from "react-icons/bi";
 import useLogout from "../../hooks/useLogout";
 import SidebarItems from "./SidebarItems";
-import React from "react";
 
 const Sidebar = () => {
 	const { handleLogout, isLoggingOut } = useLogout();
