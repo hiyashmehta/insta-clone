@@ -2,7 +2,6 @@ import { Box, Flex, Link, Text, VStack } from "@chakra-ui/react";
 import SuggestedHeader from "./SuggestedHeader";
 import SuggestedUser from "./SuggestedUser";
 import useGetSuggestedUsers from "../../hooks/useGetSuggestedUsers";
-import React from "react";
 
 const SuggestedUsers = () => {
 	const { isLoading, suggestedUsers } = useGetSuggestedUsers();
@@ -26,13 +25,13 @@ const SuggestedUsers = () => {
 			)}
 
 			{suggestedUsers.map((user) => (
-				<SuggestedUser user={user} key={user.id} />
+				<SuggestedUser user={user} key={user.id} setUser={undefined} />
 			))}
 
 			<Box fontSize={12} color={"gray.500"} mt={5} alignSelf={"start"}>
 				© 2023 Built By{" "}
-				<Link href='https://www.youtube.com/@asaprogrammer_' target='_blank' color='blue.500' fontSize={14}>
-					As a Programmer
+				<Link href='https://www.linkedin.com/in/hiyash/' target='_blank' color='blue.500' fontSize={14}>
+					Yash Mehta
 				</Link>
 			</Box>
 		</VStack>
